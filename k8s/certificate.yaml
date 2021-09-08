@@ -2,13 +2,13 @@ apiVersion: cert-manager.io/v1
 
 kind: Certificate
 metadata:
-  name: yourdomain-com-tls
+  name: prubita-live-tls
 spec:
-  secretName: yourdomain-com
+  secretName: prubita-live
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: yourdomain.com
+  commonName: prubita.live
   dnsNames:
-    - yourdomain.com
-    - www.yourdomain.com
+    - prubita.live
+    - www.prubita.live
